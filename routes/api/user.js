@@ -19,7 +19,7 @@ router.get('/',(req,res)=>{
 router.post('/',async(req,res)=>{
     console.log(req.body);
     req.body.password=sha1(req.body.password);
-    req.body.admin=true;
+    req.body.admin=false;
     req.body.notify=[];
     let ins=new User(req.body);
     let result=await ins.save();
