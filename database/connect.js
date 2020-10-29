@@ -1,6 +1,6 @@
 const mongoose=require('mongoose');
 
-mongoose.connect('mongodb+srv://luis:354575797@cluster0-7er3y.mongodb.net/test',{
+mongoose.connect('mongodb://172.20.0.2:27017/proyectores',{
    useNewUrlParser: true,
    useUnifiedTopology: true
  }).then(()=>{
